@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.todo-container {
+  @apply bg-white py-40 px-5 rounded shadow;
+}
+
+.todo-title {
+  @apply text-3xl font-bold mb-4;
+}
+
+.todo-input {
+  @apply border p-2 w-full mb-2;
+}
+
+.todo-button {
+  @apply bg-blue-500 text-white p-2 rounded;
+}
+
+.todo-list {
+  @apply mt-4;
+}
+
+.todo-item {
+  @apply mb-2 flex justify-between items-center;
+}
+
+.todo-delete-button {
+  @apply bg-red-500 text-white p-1 rounded ml-2 text-sm;
+}
