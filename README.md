@@ -1,6 +1,6 @@
-# nextjs learning environment
+### nextjs react typescript database api learning environment
 
-this is just an environment for me to learn all about nextjs and implement backend functionality. this project serves as a playground for exploring the features and capabilities of next.js, a powerful react framework for building modern web applications.
+this is just an environment for me to learn all about nextjs and implement backend functionality since im new to it
 
 i'll be:
 
