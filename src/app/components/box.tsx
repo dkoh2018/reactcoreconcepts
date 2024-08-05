@@ -29,6 +29,7 @@ const Box = () => {
     text: string;
     completion_status: boolean;
   }
+
   return (
     <div className="todo-container">
       <h2 className="todo-title">Todo List</h2>
